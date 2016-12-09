@@ -1,0 +1,38 @@
+
+/* OS/2	Warp 4.0 Resource Script File -	Created	by Prominare Designer */
+
+#define	INCL_WINSYS
+#define INCL_WINSTDDLGS
+#define INCL_WINSTDSPIN
+#define INCL_NLS
+#define INCL_SW
+
+#include <os2.h>
+
+#include "java.h"
+
+MENU 256
+BEGIN
+
+    SUBMENU "~Applet",		       IDM_APPLET, MIS_TEXT
+    BEGIN
+	MENUITEM "~Start",	       IDM_START, MIS_TEXT
+	MENUITEM "S~top",	       IDM_STOP, MIS_TEXT
+    END
+END
+
+MENU WIN_JAVAPMSAMPLE
+BEGIN
+
+    SUBMENU "~Applet",		       IDM_APPLET, MIS_TEXT
+    BEGIN
+	MENUITEM "~Start",	       IDM_START, MIS_TEXT
+	MENUITEM "S~top",	       IDM_STOP, MIS_TEXT
+    END
+
+    SUBMENU "~Console",		       IDM_CONSOLE, MIS_TEXT
+    BEGIN
+	MENUITEM "~Show",	       IDM_SHOW, MIS_TEXT
+	MENUITEM "~Hide",	       IDM_HIDE, MIS_TEXT
+    END
+END
